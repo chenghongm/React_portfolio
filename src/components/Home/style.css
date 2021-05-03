@@ -1,0 +1,59 @@
+.home {
+    flex-grow: 1;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-around;
+    align-items: center;
+  }
+  
+  .home .title {
+    padding-left: 10%;
+    width: 100%;
+    font-size: 18px;   
+    text-align: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .home .title p {
+    line-height: 50px;
+  }
+  
+  .home .title button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 30px;
+    color: #f5631fb9;
+    padding: 10px 15px;
+    border-radius: 15%;
+    background-color: #29a6c5;
+    font-family: "Righteous", cursive;
+  }
+  
+  .home .person {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .home .person img {
+    width: 80%;
+  }
+  
+  @media (min-width: 800px) {
+    .home {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .home .title,
+    .home .person {
+      width: 50%;
+      margin-top: 0;
+      text-align: left;
+      font-size: 25px;
+    }
+    .home .person img {
+      width: 100%;
+    }
+  }
